@@ -1,0 +1,101 @@
+/* --section works carrossel-- */
+
+.works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* --carrossel-- */
+
+.carrossel {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1100px;
+    height: 550px;
+    position: absolute;
+    margin-top: 200px;
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 10;
+    overflow: visible;
+ }
+ 
+ .galeria {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .galeria_item {
+     position: absolute;
+     width: 500px;
+     height: 550px;
+     margin: 0;
+     transition: transform 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+     bottom: 50px;
+     filter: grayscale(100%);
+     object-fit: contain;
+     opacity: 0;  /* Esconde os itens que não devem aparecer */
+ }
+ 
+ .galeria_item.active {
+     transform: scale(1.15) rotateY(0deg);
+     z-index: 3;
+     opacity: 1;
+     bottom: 50px;
+     filter: grayscale(0%);
+ }
+ 
+ .galeria_item.left {
+     transform: translateX(-290px) scale(0.85) rotateY(15deg);
+     z-index: 2;
+     opacity: 0.8;
+ }
+ 
+ .galeria_item.right {
+     transform: translateX(290px) scale(0.85) rotateY(-15deg);
+     z-index: 2;
+     opacity: 0.8;
+ }
+ 
+ .galeria_item.hidden {
+     opacity: 0;
+     transform: scale(0.8);
+     z-index: 1;
+ }
+ 
+
+/* --controle-- */
+
+.control {
+    background: none;
+    border: none;
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    transition: opacity 0.3s;
+    bottom: 300px;
+}
+
+.control:hover {
+    color: crimson;
+}
+
+.prev {
+    left: 10%
+}
+
+.next {
+    right: 10%;
+}

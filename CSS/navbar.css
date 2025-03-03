@@ -1,0 +1,118 @@
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.logo {
+    position: relative;
+     
+}
+
+.logo_detalhe {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.logo_detalhe img {
+    width: 300px;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.logo_detalhe img:hover {
+    transform: none;
+}
+
+.logo img {
+    width: 150px; 
+    display: block;
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.logo img:hover {
+    transform: scale(1.3); /* Efeito de zoom na logo principal */
+}
+
+.logo:hover .logo_detalhe {
+    opacity: 1;
+}
+
+.logo:hover .logo_detalhe img {
+    animation: piscarScale 0.5s infinite ease-in-out forwards;
+}
+
+@keyframes piscarScale {
+    0%, 100% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    30% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    60% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    80% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+
+
+
+/* --nav inicio-- */
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 80px;
+    display: flex;
+    gap: 100px;
+}
+
+.navbar li {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.navbar li a {
+    font-family: "Bigelow Rules", serif;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    transition: transform .3s ease-in, color .3s ease-in;
+    display: inline-block; /* Adicionado para o hover funcionar com scale*/
+}
+
+
+.navbar li a:hover {
+  
+    color:crimson;
+    transform: scale(1.3);
+    
+}
+
+
+.navbar li:nth-child(2) { /* "Ghosthause" é o segundo item */
+    top: -50px; /* Ajuste esse valor conforme necessário */
+}

@@ -1,0 +1,207 @@
+/* --social-- */
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 600px;
+}
+
+.texto_2 {
+    font-family: "Amatic SC", serif;
+    width: 700px;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.social_list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_list li {
+    display: inline-block;
+}
+
+.social_list img {
+    width: 80px;
+    height: auto;
+    mix-blend-mode: multiply;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social_list img:hover {
+    transform: scale(1.5);
+    
+}
+
+.email {
+    background: none;
+    border: none;
+    font-family: "Bigelow Rules", serif ;
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: transform 0.3s ease-in-out;
+    mix-blend-mode: multiply;
+}
+
+.email:hover {
+    color: crimson;
+    transform: scale(1.5);
+}
+
+
+/* --contato-- */
+
+.contact {
+    height: 100vh;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: multiply;
+}
+
+.contact_wrapper {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.contact_esq {
+    width:350px;
+    height: 550px;
+    background-image: url(../img/godzila_social.png);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+.contact_esq:hover {
+    transform: scale(1.5);
+}
+
+.contact_dir {
+    width: 350px;
+    height: 550px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.contact_oi {
+    font-family: "Amatic SC", serif;
+    color: #dc143c;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 5px,
+}
+
+
+.contact_dir form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.input_grupo {
+    position: relative;
+    
+}
+
+.field {
+    width: 250px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid crimson;
+    margin: 10px 0;
+    padding: 16px 16px 16px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: crimson;
+}
+
+.input_grupo input {
+    height: 50px;
+    
+}
+
+.input_grupo textarea {
+    max-width: 20rem;
+    max-height: 16rem;
+   
+}
+
+.field:focus {
+    border-bottom-style: solid;
+    outline: none; /*--retira a borda do input text area--*/
+}
+.input_grupo label {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Amatic SC", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    letter-spacing: "5px";
+    pointer-events: none;
+    bottom: 10px;
+    transition: all 0.3s;
+}
+
+.input_label {
+    bottom: 3px;
+}
+
+.mensagem {
+    margin-bottom: 5px ;
+}
+
+.field:focus ~ label {
+    transform: translateY(-50px);
+    font-size: 1rem;
+}
+
+.submit_btn {
+    width: 200px;
+    height: 50px;
+    background-color: crimson;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    font-family:"Amatic SC", serif ;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: "5px";
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.submit_btn:hover {
+    transform: scale(1.3);
+}

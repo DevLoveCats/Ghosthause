@@ -1,0 +1,26 @@
+body{
+    background-image: url(../img/bg_maior.jpg);
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:#dc143c;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+.container {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+section {
+    height: 100% ;
+}
