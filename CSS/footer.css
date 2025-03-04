@@ -42,7 +42,7 @@ button {
 .modal_container {
     width: 100vw;
     position: fixed;
-    top: 30px;
+    top: -20px;
     z-index: 10;
     justify-content: center;
     display: none;
