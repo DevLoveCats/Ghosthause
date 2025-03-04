@@ -93,9 +93,9 @@
 }
 
 .prev {
-    left: 10%
+    left: 0;
 }
 
 .next {
-    right: 10%;
+    right: 0;
 }
